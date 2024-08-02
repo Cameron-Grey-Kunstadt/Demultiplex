@@ -3,15 +3,35 @@
 ## Part 1
 1. Be sure to upload your Python script. Provide a link to it here:
 
-| File name | label | Read length | Phred encoding |
-|---|---|---|---|
-| 1294_S1_L008_R1_001.fastq.gz |  |  |  |
-| 1294_S1_L008_R2_001.fastq.gz |  |  |  |
-| 1294_S1_L008_R3_001.fastq.gz |  |  |  |
-| 1294_S1_L008_R4_001.fastq.gz |  |  |  |
+[perbase_dist.py](perbase_dist.py)
 
+
+| File name                    | label  | Read length | Phred encoding |
+| ---------------------------- | ------ | ----------- | -------------- |
+| 1294_S1_L008_R1_001.fastq.gz | Read1  | 101         | 33             |
+| 1294_S1_L008_R2_001.fastq.gz | Index1 | 8           | 33             |
+| 1294_S1_L008_R3_001.fastq.gz | Index2 | 8           | 33             |
+| 1294_S1_L008_R4_001.fastq.gz | Read2  | 101         | 33             |
 2. Per-base NT distribution
     1. Use markdown to insert your 4 histograms here.
+
+    R1:
+    
+    ![R1](R1_graph.png)
+
+    R2:
+    
+    ![R2](R2_graph.png)
+    
+    R3:
+    
+    ![R3](R3_graph.png)
+
+    R4:
+    
+    ![R4](R4_graph.png)
+    
+    
     2. **YOUR ANSWER HERE**
     3. **YOUR ANSWER HERE**
     
