@@ -18,22 +18,22 @@
     R1:
     
     ![R1](R1_graph.png)
-
+    
+    2.
     R2:
     
     ![R2](R2_graph.png)
-    
+
+    3.
     R3:
     
     ![R3](R3_graph.png)
 
+
+    4.
     R4:
     
     ![R4](R4_graph.png)
-    
-    
-    2. **YOUR ANSWER HERE**
-    3. **YOUR ANSWER HERE**
     
 ## Part 2
 1. Define the problem
@@ -52,10 +52,43 @@ The problem is that we have dual-matched sequencing data where index hopping occ
 3. Upload your [4 input FASTQ files](../TEST-input_FASTQ) and your [>=6 expected output FASTQ files](../TEST-output_FASTQ).
 4. Pseudocode
 
-[Pseudocode](First assignment, Part2, Psuedocode.pdf)
+[Pseudocode](First_assignment_Part2_Psuedocode.pdf)
 
 5. High level functions. For each function, be sure to include:
     1. Description/doc string
     2. Function headers (name and parameters)
     3. Test examples for individual functions
     4. Return statement
+
+```
+def rev_comp(input_string):
+''' returns reverse compliment of input_string'''
+	returns rev_comp
+
+x = rev_comp(ATC)
+print("x is:",x)
+
+x is GAT
+
+
+def add_index_to_header(header, index1, index2)
+'''returns the header with the indexes added appropriately, I'm not sure exactly how i'm going to format the headers yet'''
+	returns new_header
+
+index1, index2 = 'AAA', 'TTT'
+old_header = "NUM12300000:123:123:1::453; 213 23"
+new_header = add_index_to_header(old_header, index1, index2)
+print(new_header)
+
+NUM12300000:123:123:1::453; 213 23 AAA TTT
+
+
+
+def average_phred_score(string)
+	returns the average phred score for a given string of PHRED scores
+
+Already in bioinfo
+
+def write_out_record(strings, file)
+	all the code to write out our formatted headers to a specific file
+```
