@@ -19,21 +19,26 @@
     
     ![R1](R1_graph.png)
     
-    2.
+
     R2:
     
     ![R2](R2_graph.png)
 
-    3.
     R3:
     
     ![R3](R3_graph.png)
 
-
-    4.
     R4:
     
     ![R4](R4_graph.png)
+
+    2. What is a good quality score cutoff for index reads and biological read pairs to utilize for sample identification and downstream analysis, respectively? Justify your answer.
+
+
+
+    
+    3. How many indexes have undetermined (N) base calls? (Utilize your command line tool knowledge. Submit the command(s) you used. CHALLENGE: use a one-line command)
+
     
 ## Part 2
 1. Define the problem
