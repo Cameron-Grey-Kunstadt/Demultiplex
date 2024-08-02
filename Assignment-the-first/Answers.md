@@ -67,9 +67,9 @@ def rev_comp(input_string):
 
 x = rev_comp(ATC)
 print("x is:",x)
-
+```
 x is GAT
-
+```
 
 def add_index_to_header(header, index1, index2)
 '''returns the header with the indexes added appropriately, I'm not sure exactly how i'm going to format the headers yet'''
@@ -79,16 +79,23 @@ index1, index2 = 'AAA', 'TTT'
 old_header = "NUM12300000:123:123:1::453; 213 23"
 new_header = add_index_to_header(old_header, index1, index2)
 print(new_header)
-
+```
 NUM12300000:123:123:1::453; 213 23 AAA TTT
+```
 
 
+def qual_score(phred_score: str) -> float:
+    '''Calculates average phred score for a string of character phred scores'''
+    sum_score = 0
+    for letter in phred_score:
+        score = convert_phred(letter)
+        sum_score += score
+    return sum_score / len(phred_score)
+```
+This is already in bioinfo and it has been unit tested.
+```
+def write_out_record(strings, file, perm)
+	'''all the code to write out our formatted headers to a specific file, given the permissions of write, or append'''
 
-def average_phred_score(string)
-	returns the average phred score for a given string of PHRED scores
-
-Already in bioinfo
-
-def write_out_record(strings, file)
-	all the code to write out our formatted headers to a specific file
+Function does not return anything, just writes the given strings out to a given file.
 ```
