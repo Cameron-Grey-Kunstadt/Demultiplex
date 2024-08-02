@@ -37,9 +37,23 @@
     
 ## Part 2
 1. Define the problem
+
+The problem is that we have dual-matched sequencing data where index hopping occurred. So we have some of our sequenced with incorrect indexes, and some with indexes with low quality scores.
+
+
 2. Describe output
+
+```
+    1. Reads that have indexes that are matching (reverse compliments of each other), that are both in our set of barcodes, and are of good quality.
+    2. Reads that have indexes that are in our sets of barcodes, are of good quality, but are NOT matching.
+    3. Reads where one or both of the indexes are not in our set of barcodes, or where one or both of them have too low of a Q score. 
+```
+
 3. Upload your [4 input FASTQ files](../TEST-input_FASTQ) and your [>=6 expected output FASTQ files](../TEST-output_FASTQ).
 4. Pseudocode
+
+[Pseudocode](First assignment, Part2, Psuedocode.pdf)
+
 5. High level functions. For each function, be sure to include:
     1. Description/doc string
     2. Function headers (name and parameters)
