@@ -35,10 +35,21 @@
     2. What is a good quality score cutoff for index reads and biological read pairs to utilize for sample identification and downstream analysis, respectively? Justify your answer.
 
 
+	I would think that for our index reads, our Qscores should have a higher cutoff, as low quality indexes will have a high likelyhood of messing up the identification of a specific sequence, and there are only 8 basepairs to work with, so they should be of high quality and held to a higher standard. I suggest atleast Q30, so errors are 1 in 1000.
 
-    
-    3. How many indexes have undetermined (N) base calls? (Utilize your command line tool knowledge. Submit the command(s) you used. CHALLENGE: use a one-line command)
+	The biological reads I think can be a bit more lenient (depending on what our actually purposes of the research are), and there are 101 basepairs on each read to work with, so each single basepair is likely not quite as important. I think somewhere around Q20 to Q25 would be an appropriate cutoff point. 
 
+
+ 
+     3. How many indexes have undetermined (N) base calls? (Utilize your command line tool knowledge. Submit the command(s) you used. CHALLENGE: use a one-line command)
+
+```
+zcat 1294_S1_L008_R2_001.fastq.gz | sed -n '2~4p' | grep -c "N"
+3976613
+
+zcat 1294_S1_L008_R3_001.fastq.gz | sed -n '2~4p' | grep -c "N"
+3328051
+```
     
 ## Part 2
 1. Define the problem
