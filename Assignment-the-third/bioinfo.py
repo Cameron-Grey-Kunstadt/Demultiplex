@@ -11,7 +11,7 @@
 written during the Bioinformatics and Genomics Program coursework.
 You should update this docstring to reflect what you would like it to say'''
 
-__version__ = "0.3"         # Read way more about versioning here:
+__version__ = "0.4"         # Read way more about versioning here:
                             # https://en.wikipedia.org/wiki/Software_versioning
 
 DNAbases = set('ATGCNatcgn')
